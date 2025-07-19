@@ -1,0 +1,234 @@
+
+.language-javascript .keyword {
+  color: #ff79c6;
+}
+
+.language-javascript .string {
+  color: #f1fa8c;
+}
+
+.language-javascript .comment {
+  color: #6272a4;
+}
+
+.language-javascript .function {
+  color: #50fa7b;
+}
+
+.language-swift .keyword {
+  color: #ff79c6;
+}
+
+.language-swift .string {
+  color: #f1fa8c;
+}
+
+.language-swift .comment {
+  color: #6272a4;
+}
+
+.language-swift .function {
+  color: #50fa7b;
+}
+
+.language-python .keyword {
+  color: #ff79c6;
+}
+
+.language-python .string {
+  color: #f1fa8c;
+}
+
+.language-python .comment {
+  color: #6272a4;
+}
+
+.language-python .function {
+  color: #50fa7b;
+}
+
+.feature-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(76, 201, 240, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+.cta-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.7s ease;
+}
+
+.cta-button:hover::after {
+  left: 100%;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 2px rgba(76, 201, 240, 0.3);
+}
+
+.main-nav a {
+  position: relative;
+}
+
+.main-nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+  opacity: 0.5;
+}
+
+.main-nav a:hover::before {
+  width: 100%;
+}
+
+.logo {
+  position: relative;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease;
+}
+
+.logo:hover {
+  text-shadow: 0 0 10px rgba(76, 201, 240, 0.5);
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), var(--accent-secondary));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(76, 201, 240, 0.3);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(76, 201, 240, 0.5);
+}
+
+.control-button {
+  position: relative;
+}
+
+.control-button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--accent-color), var(--accent-secondary));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.control-button:hover::before {
+  opacity: 0.5;
+}
+
+.control-button.paused .icon {
+  color: var(--text-secondary);
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--accent-color);
+  color: white;
+  padding: 8px;
+  z-index: 1000;
+  transition: top 0.3s ease;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+}

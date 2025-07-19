@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Al-Sharif | Cybersecurity Developer & iOS Specialist</title>
+    <link rel="stylesheet" href="css/hyper-modern.css">
+</head>
+<body>
+    <div id="loadingScreen" class="loading-screen">
+        <div class="boot-container">
+            <div class="boot-header">
+                <div class="boot-logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">x6x3</span>
+                    <span class="logo-bracket">]</span>
+                </div>
+                <div class="boot-version">v2.1.0 - Cybersecurity Framework</div>
+            </div>
+            
+            <div class="boot-logs" id="bootLogs">
+                <div class="log-line">
+                    <span class="timestamp">[0.000000]</span>
+                    <span class="log-level ok">OK</span>
+                    <span class="log-message">Initializing security kernel...</span>
+                </div>
+            </div>
+            
+            <div class="boot-progress">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                    <div class="progress-text" id="progressText">Loading... 0%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand">@2623</div>
+                <div class="status-dot"></div>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-target="home">Home</a>
+                <a href="#about" class="nav-link" data-target="about">About</a>
+                <a href="#work" class="nav-link" data-target="work">Skills</a>
+                <a href="#contact" class="nav-link" data-target="contact">Contact</a>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section id="home" class="section hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="avatar-section">
+                        <div class="avatar-container">
+                            <img src="images/avatar.png" alt="Ali Al-Sharif Profile Picture" class="avatar">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-pulse"></div>
+                        </div>
+                        <div class="status-badge">
+                            <div class="status-indicator"></div>
+                            <span>Available for work</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-text">
+                        <h1 class="hero-name">Ali Al-Sharif</h1>
+                        <h2 class="hero-role">Cybersecurity Developer & iOS Specialist</h2>
+                        <p class="hero-bio">
+                            Building secure mobile experiences with 3.5+ years of expertise. 
+                            Passionate about creating robust applications that protect user data.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="#work" class="btn btn-primary" data-target="work">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                                View My Work
+                            </a>
+                            <a href="#contact" class="btn btn-ghost" data-target="contact">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                Get In Touch
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="code-showcase">
+                        <div class="code-window">
+                            <div class="code-header">
+                                <div class="window-controls">
+                                    <div class="control red"></div>
+                                    <div class="control yellow"></div>
+                                    <div class="control green"></div>
+                                </div>
+                                <div class="file-name">developer.swift</div>
+                                <button class="copy-btn" aria-label="Copy code">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="code-body">
+                                <pre class="code-content">struct Developer {
+   let name = "Ali Al-Sharif"
+   let username = "@2623"
+   let focus = "cybersecurity"
+   let specialty = "iOS development"
+   let experience = "3.5+ years"
+   
+   func buildSecureApp() -> SecureApp {
+       return SecureApp(
+           architecture: .secure,
+           testing: .comprehensive,
+           monitoring: .continuous
+       )
+   }
+}</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">About</span>
+                    <h2 class="section-title">Building secure digital experiences</h2>
+                    <p class="section-description">
+                        Passionate about creating robust, secure applications that protect user data and privacy
+                    </p>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Professional Background</h3>
+                        <p class="card-text">3.5+ years in cybersecurity and iOS development, specializing in secure mobile application architecture for financial, healthcare, and government sectors.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Security First</h3>
+                        <p class="card-text">Building security into every layer of the development process, combining deep technical knowledge with practical understanding of real-world threats.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Community</h3>
+                        <p class="card-text">Contributing to open-source security projects and mentoring aspiring security professionals in the cybersecurity community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Skills</span>
+                    <h2 class="section-title">Technical expertise</h2>
+                    <p class="section-description">
+                        Core technologies and ongoing learning journey
+                    </p>
+                </div>
+
+                <div class="skills-container">
+                    <div class="skills-section">
+                        <h3 class="skills-title">Core Languages</h3>
+                        <div class="skills-list">
+                            <div class="skill" data-level="90">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-level="85">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-level="80">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-level="75">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-level="85">
+                                <div class="skill-info">
+                                    <span class="skill-name">Objective-C</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill" data-level="70">
+                                <div class="skill-info">
+                                    <span class="skill-name">C++</span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-section">
+                        <h3 class="skills-title">Currently Learning</h3>
+                        <div class="skills-list">
+                            <div class="skill learning" data-level="40">
+                                <div class="skill-info">
+                                    <span class="skill-name">Kotlin</span>
+                                    <span class="skill-percent">40%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                                <span class="learning-tag">Learning</span>
+                            </div>
+
+                            <div class="skill learning" data-level="50">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percent">50%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                                <span class="learning-tag">Learning</span>
+                            </div>
+
+                            <div class="skill learning" data-level="60">
+                                <div class="skill-info">
+                                    <span class="skill-name">Advanced Objective-C</span>
+                                    <span class="skill-percent">60%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill"></div>
+                                </div>
+                                <span class="learning-tag">Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Contact</span>
+                    <h2 class="section-title">Let's work together</h2>
+                    <p class="section-description">
+                        Ready to collaborate on something amazing? Let's build the future.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <a href="https://instagram.com/2623" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Instagram</h3>
+                            <p>@2623</p>
+                        </div>
+                        <div class="contact-arrow">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/x6x3" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>GitHub</h3>
+                            <p>@x6x3</p>
+                        </div>
+                        <div class="contact-arrow">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/x2623" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-16.5 7.5a2.25 2.25 0 0 0 .126 4.073l3.9 1.205 2.306 6.54c.376 1.02 1.658 1.545 2.73 1.134l1.3-.5a1.03 1.03 0 0 0 .641-.643l2.5-6.5a.25.25 0 0 1 .171-.143l5.233-1.676a2.25 2.25 0 0 0 1.412-2.058l-.277-7.542a2.25 2.25 0 0 0-2.52-2.105z"/>
+                                <path d="M11 16.5l3.5 3.5"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Telegram</h3>
+                            <p>@x2623</p>
+                        </div>
+                        <div class="contact-arrow">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="https://x6x3.github.io/hex" target="_blank" rel="noopener noreferrer" class="contact-link hex-tool">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Hex-Tool</h3>
+                            <p>Security Utility</p>
+                        </div>
+                        <div class="contact-arrow">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Ali Al-Sharif. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/hyper-modern.js"></script>
+</body>
+</html>
