@@ -76,7 +76,7 @@ A cutting-edge, ultra-modern portfolio website showcasing cybersecurity expertis
 
 ## 📄 License
 
-© 2024 Ali Al-Sharif. All rights reserved.
+© 2025 Ali Al-Sharif. All rights reserved.
 
 ---
 
